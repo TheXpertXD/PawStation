@@ -1,23 +1,24 @@
+/*Text Center class*/
 .center {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
 
+/*Image Center class*/
 .imageC {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
+/*Table padding*/
 th, td {
     padding: 5px;
 }
 
+/*Background + Text color*/
 body {
-    background-color: lightgray;
-}
-
-p, h1, h2 {
+    background-image: url("images/backGt.jpg");
     color: black;
 }
