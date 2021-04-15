@@ -2,6 +2,7 @@
   <head>
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css2?family=Slabo+13px&family=Ultra&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="thx.js"></script>
 
     <style>
       h1 {
@@ -28,12 +29,46 @@
 
   <body>
     
+    <form method="post" action="thank.html" id="form" >
+      <fieldset class="center">
+        <legend>Please fill out the following form: </legend>
+
+        <p>
+
+          <label>*Name:</label>
+          <input type="text" name="name" id="name" required/>
+          <br><br>
+
+          <label>*Hometown:</label>
+          <input type="text" name="city" id="city" required>
+          <br/><br/>
+          
+          <label>Phone Number:</label>
+          <input type="tel" name="phone" id="phone"/>
+          <br/><br/>
+          
+          <label>*Your E-mail:</label>
+          <input type="email" name="email" id="email" required/>
+          <br/><br/>
+          
+          <br><label><strong>Ask us anything!</strong></label><br><br>
+          <textarea placeholder="Enter your comments here" name="ask" rows=10 cols=50 required></textarea>
+          <br><br>
+          
+        </p>
+        <input type="submit" />
+      </fieldset>
+    </form>
+
     <p>
-      <br>
-      <strong>This site is currently under construction.</strong>
+      Note: The * symbol means that this box is required.
     </p>
 
-    <p><small>Copyright &copy; 2021 Pawstation.org</small></p>
+    <div>
+      <img src="images/yas.png" id="thank" style="display:none;" />
+    </div>
+
+    <p><br><small>Copyright &copy; 2021 Pawstation.org</small></p>
         
     <audio controls autoplay loop>
       <source src="music/dsi.mp3" type="audio/ogg">
